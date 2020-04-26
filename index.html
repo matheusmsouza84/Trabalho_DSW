@@ -1,0 +1,56 @@
+<!-- Nome: Matheus Melchior Souza - Trabalho 1 -->
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <TITLE>Cadastro de Produtos</TITLE>
+        <link rel="stylesheet" type="text/css" href="estilo.css "/>
+    </head>
+    <body>
+            <h1>Matheus Melchior Souza - Trabalho 1</h1>
+           
+           <style type="text/css">
+                p{
+                    color: white;
+                    font-size: 30;
+                }
+                </style>
+            <p><b>Cadastrar Produto</b></p>>
+            
+            <div id="divform">
+                    <form method="GET" action="salvar.php" 
+                    onsubmit="return validar()" 
+                    enctype="multipart/form-data">
+                        <label><b>Nome:</b>:</label>
+                        <input type="text" name="txtNome" id="name" />  <br> <br> <br> <br>
+                        <label><b>Preço:</b></label>
+                        <input type="number" name="txtPreco" id="preco" step="0.01"
+                        /> <br> <br> <br> <br>
+                        <label><b>Quantidade:</b></label>
+                        <input type="number" name="txtQuantidade" id="quantidade" 
+                        /> <br> <br> <br> <br>
+                        <label><b>Data de Validade:</b></label>
+                        <input type="date" name="txtValidade" id="validade" 
+                        min="2020-05-04"/> <br> <br> <br> <br>
+                        <label><b>Foto do Produto:</b></label>
+                        <input type="file" name="txtFoto" id="Foto" /> <br> <br> <br> <br>
+                    
+                        <label><b>Categoria:</b></label>
+                    <select id="lista">
+                        <option value="">Selecione...</option>
+                        <option value="bebidas">bebidas</option>
+                        <option value="Alimentos_pereciveis">alimentos perecíveis</option>
+                        <option value="Alimentos_inpereciveis">alimentos inperecíveis</option>
+                        <option value="Eletrodomesticos">Eletrodomesticos</option>
+                        <option value="Eletronicos">Eletronicos</option>
+                    </select> <br><br><br>
+                        <input type="submit" value="Salvar" /> 
+                    </form>
+            </div>
+
+
+
+
+        <script src="scripts.js"></script> 
+    </body>
+
+</html>
