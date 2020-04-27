@@ -18,7 +18,7 @@ function validar(){
         alert("O Nome precisa conter no mínimo 2 caracteres!!!");
         return false;
     }
-    else if(vpreco < 0){
+    else if(vpreco <= 0){
             alert("O Preço do produto tem que ser positivo");
             return false;
 }
