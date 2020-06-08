@@ -12,6 +12,7 @@ function validar(){
     var vf = document.getElementById("Foto");
     var vfoto = vf.value;
 
+    
 
 
     if(vnome.length < 2){
